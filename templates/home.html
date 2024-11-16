@@ -1,0 +1,51 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to SwissmoteDashboard</h1>
+        <p class="lead">Your one-stop solution for job listings and more!</p>
+        <a href="/jobs" class="btn btn-light btn-lg">View Job Listings</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Quality Listings</h5>
+                        <p class="card-text">We provide the best job listings from top companies.</p>
+                        <a href="/jobs" class="btn btn-primary">Explore Jobs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">User -Friendly Interface</h5>
+                        <p class="card-text">Our platform is designed for ease of use, making job searching a breeze.</p>
+                        <a href="/search" class="btn btn-primary">Start Searching</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Support</h5>
+                        <p class="card-text">Join our community and get support from fellow job seekers.</p>
+                        <a href="/about" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

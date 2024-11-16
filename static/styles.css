@@ -1,0 +1,21 @@
+/* static/css/styles.css */
+
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?job'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.features .card {
+    transition: transform 0.2s;
+}
+
+.features .card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}

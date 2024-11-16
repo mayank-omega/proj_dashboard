@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>SwissMode JobSeeker Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SwissMode JobSeeker Dashboard</h1>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Job Listings</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section class="job-listings">
+                    <h2>Available Job Listings</h2>
+                    <div id="job-list"></div>
+                </section>
+
+                <section class="messages">
+                    <h2>Messages</h2>
+                    <div id="message-list"></div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 SwissMode. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
